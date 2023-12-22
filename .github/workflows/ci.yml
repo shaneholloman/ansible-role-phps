@@ -50,17 +50,7 @@ jobs:
           - distro: debian12
             playbook: converge.yml
 
-          # # PHP 8.0.
-          # - distro: rockylinux8
-          #   playbook: 8.0.yml
-          # - distro: debian10
-          #   playbook: 8.0.yml
-
-          # # PHP 7.4.
-          # - distro: rockylinux8
-          #   playbook: 7.4.yml
-          # - distro: debian10
-          #   playbook: 7.4.yml
+at
 
     steps:
       - name: Check out the codebase.

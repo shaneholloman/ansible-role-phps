@@ -38,4 +38,16 @@
     php_install_recommends: "{{ php_versions_install_recommends }}"
 
 # Setup tasks.
-- include_tasks: "setup-{{ ansible_os_family }}.yml"
+- name: Include RedHat setup tasks
+  include_tasks: setup-redhat.yml
+  when: ansible_os_family == 'RedHat'
+
+- name: Include Debian setup tasks
+  include_tasks: setup-debian.yml
+  when: ansible_os_family == 'Debian'
+
+- name: Include Suse setup tasks
+  include_tasks: setup-suse.yml
+  when: ansible_os_family == 'Suse'
+
+# Add more conditions here for other OS families
