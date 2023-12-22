@@ -46,8 +46,4 @@
   include_tasks: setup-debian.yml
   when: ansible_os_family == 'Debian'
 
-- name: Include Suse setup tasks
-  include_tasks: setup-suse.yml
-  when: ansible_os_family == 'Suse'
-
 # Add more conditions here for other OS families
