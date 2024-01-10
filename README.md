@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/shaneholloman/ansible-role-phps/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman/ansible-role-phps/actions/workflows/ci.yml)
 
-Allows different PHP versions to be installed when using the `shaneholloman.php` role (or a similar role). This role was originally built for [Drupal VM](https://www.drupalvm.com) but was released more generically so others could use an easier mechanism for switching PHP versions.
+Allows different PHP versions to be installed when using the `shaneholloman.php` role (or a similar role). This role is a mechanism for switching PHP versions.
 
 ## Requirements
 
@@ -29,10 +29,10 @@ The PHP version to be installed. Any [currently-supported PHP major version](htt
 
     - hosts: webservers
       become: true
-    
+
       vars:
         php_version: '8.2'
-    
+
       roles:
         - name: shaneholloman.remi
           when: ansible_os_family == 'RedHat'
