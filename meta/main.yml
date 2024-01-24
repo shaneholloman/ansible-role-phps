@@ -1,14 +1,12 @@
 ---
-dependencies: []
-
 galaxy_info:
   role_name: phps
   author: shaneholloman
   description: Allows different PHP versions to be installed.
   company: "shaneholloman"
   license: "license (Unlicense)"
-  issue_tracker_url: https://github.com/shaneholloman/ansible-role-phps/issues
-  min_ansible_version: "2.10"
+  min_ansible_version: "2.12"
+
   platforms:
     - name: Debian
       versions:
@@ -17,7 +15,10 @@ galaxy_info:
       versions:
         - bionic
         - jammy
+
   galaxy_tags:
     - php
     - web
     - vm
+
+dependencies: []
