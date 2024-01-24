@@ -6,7 +6,7 @@ galaxy_info:
   author: shaneholloman
   description: Allows different PHP versions to be installed.
   company: "shaneholloman"
-  license: "MIT"
+  license: "license (Unlicense)"
   issue_tracker_url: https://github.com/shaneholloman/ansible-role-phps/issues
   min_ansible_version: "2.10"
   platforms:
